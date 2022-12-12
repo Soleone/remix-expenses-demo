@@ -1,4 +1,4 @@
-export default function Modal({ children, onClose }) {
+export default function Modal({ children, onClose }: { children: JSX.Element[] | JSX.Element, onClose: () => void }) {
   return (
     <div className="modal-backdrop" onClick={onClose}>
       <dialog

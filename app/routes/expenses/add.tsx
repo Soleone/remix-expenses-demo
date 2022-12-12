@@ -1,7 +1,10 @@
-export default function AddRoute() {
-  return (
-    <div>
+import ExpenseForm from "~/components/expenses/ExpenseForm"
+import Modal from "~/components/util/Modal"
 
-    </div>
+export default function AddExpensesRoute() {
+  return (
+    <Modal onClose={() => { }}>
+      <ExpenseForm />
+    </Modal>
   )
 }

@@ -1,7 +1,10 @@
 import ExpenseForm from "~/components/expenses/ExpenseForm"
+import Modal from "~/components/util/Modal"
 
 export default function ExpenseRoute() {
   return (
-    <ExpenseForm />
+    <Modal onClose={() => { }}>
+      <ExpenseForm />
+    </Modal>
   )
 }
