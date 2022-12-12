@@ -1,6 +1,6 @@
-import { FaLock } from 'react-icons/fa';
+import { FaLock } from 'react-icons/fa'
 
-function AuthForm() {
+export default function AuthForm() {
   return (
     <form method="post" className="form" id="auth-form">
       <div className="icon-img">
@@ -19,7 +19,6 @@ function AuthForm() {
         <a href="/auth">Log in with existing user</a>
       </div>
     </form>
-  );
+  )
 }
 
-export default AuthForm;

@@ -1,5 +1,6 @@
 import type { LinksFunction, MetaFunction } from "@remix-run/node"
 import authStyles from "~/styles/auth.css"
+import AuthForm from "~/components/auth/AuthForm"
 
 export const links: LinksFunction = () => {
   return [
@@ -15,6 +16,6 @@ export const meta: MetaFunction = () => {
 
 export default function AuthRoute() {
   return (
-    <h1>Auth</h1>
+    <AuthForm />
   )
 }

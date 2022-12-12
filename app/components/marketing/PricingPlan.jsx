@@ -1,5 +1,5 @@
-function PricingPlan({ title, price, perks, icon }) {
-  const Icon = icon;
+export default function PricingPlan({ title, price, perks, icon }) {
+  const Icon = icon
   return (
     <article>
       <header>
@@ -20,7 +20,5 @@ function PricingPlan({ title, price, perks, icon }) {
         </div>
       </div>
     </article>
-  );
+  )
 }
-
-export default PricingPlan;

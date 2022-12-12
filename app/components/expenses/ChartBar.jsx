@@ -1,8 +1,8 @@
-const ChartBar = ({ maxValue, value, label }) => {
-  let barFillHeight = '0%';
+export default function ChartBar({ maxValue, value, label }) {
+  let barFillHeight = '0%'
 
   if (maxValue > 0) {
-    barFillHeight = Math.round((value / maxValue) * 100) + '%';
+    barFillHeight = Math.round((value / maxValue) * 100) + '%'
   }
 
   return (
@@ -15,7 +15,5 @@ const ChartBar = ({ maxValue, value, label }) => {
       </div>
       <div className="chart-bar--label">{label}</div>
     </div>
-  );
-};
-
-export default ChartBar;
+  )
+}

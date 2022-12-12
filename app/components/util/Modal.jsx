@@ -1,4 +1,4 @@
-function Modal({ children, onClose }) {
+export default function Modal({ children, onClose }) {
   return (
     <div className="modal-backdrop" onClick={onClose}>
       <dialog
@@ -9,7 +9,5 @@ function Modal({ children, onClose }) {
         {children}
       </dialog>
     </div>
-  );
+  )
 }
-
-export default Modal;

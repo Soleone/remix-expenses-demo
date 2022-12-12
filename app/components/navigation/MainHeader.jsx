@@ -1,6 +1,6 @@
-import Logo from '../util/Logo';
+import Logo from '../util/Logo'
 
-function MainHeader() {
+export default function MainHeader() {
   return (
     <header id="main-header">
       <Logo />
@@ -27,7 +27,5 @@ function MainHeader() {
         </ul>
       </nav>
     </header>
-  );
+  )
 }
-
-export default MainHeader;

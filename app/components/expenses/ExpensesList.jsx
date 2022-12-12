@@ -1,6 +1,6 @@
-import ExpenseListItem from './ExpenseListItem';
+import ExpenseListItem from './ExpenseListItem'
 
-function ExpensesList({ expenses }) {
+export default function ExpensesList({ expenses }) {
 
   return (
     <ol id="expenses-list">
@@ -14,7 +14,5 @@ function ExpensesList({ expenses }) {
         </li>
       ))}
     </ol>
-  );
+  )
 }
-
-export default ExpensesList;

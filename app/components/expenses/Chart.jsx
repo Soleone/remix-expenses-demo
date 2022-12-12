@@ -1,6 +1,6 @@
-import ChartBar from './ChartBar';
+import ChartBar from './ChartBar'
 
-function Chart({ expenses }) {
+export default function Chart({ expenses }) {
   const chartDataPoints = [
     { label: 'Jan', value: 0 },
     { label: 'Feb', value: 0 },
@@ -14,15 +14,15 @@ function Chart({ expenses }) {
     { label: 'Oct', value: 0 },
     { label: 'Nov', value: 0 },
     { label: 'Dec', value: 0 },
-  ];
+  ]
 
   for (const expense of expenses) {
-    const expenseMonth = new Date(expense.date).getMonth(); // starting at 0 => January => 0
-    chartDataPoints[expenseMonth].value += expense.amount;
+    const expenseMonth = new Date(expense.date).getMonth() // starting at 0 => January => 0
+    chartDataPoints[expenseMonth].value += expense.amount
   }
 
-  const dataPointValues = chartDataPoints.map((dataPoint) => dataPoint.value);
-  const totalMaximum = Math.max(...dataPointValues);
+  const dataPointValues = chartDataPoints.map((dataPoint) => dataPoint.value)
+  const totalMaximum = Math.max(...dataPointValues)
 
   return (
     <section>
@@ -38,7 +38,5 @@ function Chart({ expenses }) {
         ))}
       </ol>
     </section>
-  );
+  )
 }
-
-export default Chart;

@@ -1,4 +1,4 @@
-function ExpenseListItem({ title, amount }) {
+export default function ExpenseListItem({ title, amount }) {
   function deleteExpenseItemHandler() {
     // tbd
   }
@@ -14,7 +14,5 @@ function ExpenseListItem({ title, amount }) {
         <a href="tbd">Edit</a>
       </menu>
     </article>
-  );
+  )
 }
-
-export default ExpenseListItem;

@@ -1,5 +1,5 @@
-function ExpenseForm() {
-  const today = new Date().toISOString().slice(0, 10); // yields something like 2023-09-10
+export default function ExpenseForm() {
+  const today = new Date().toISOString().slice(0, 10) // yields something like 2023-09-10
 
   return (
     <form method="post" className="form" id="expense-form">
@@ -30,7 +30,5 @@ function ExpenseForm() {
         <a href="tbd">Cancel</a>
       </div>
     </form>
-  );
+  )
 }
-
-export default ExpenseForm;
