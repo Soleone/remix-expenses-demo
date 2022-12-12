@@ -1,4 +1,8 @@
-export default function PricingPlan({ title, price, perks, icon }) {
+import type { Plan } from "~/model/types"
+type PublicPlan = Omit<Plan, "id">
+
+
+export default function PricingPlan({ title, price, perks, icon }: PublicPlan) {
   const Icon = icon
   return (
     <article>
