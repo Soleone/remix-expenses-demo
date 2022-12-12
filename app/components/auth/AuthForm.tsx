@@ -1,5 +1,5 @@
 import { Link, useSearchParams } from '@remix-run/react'
-import { FaLock } from 'react-icons/fa'
+import { FaLock, FaUserPlus } from 'react-icons/fa'
 import { AUTH_MODE_PARAM_NAME, LOGIN_MODE, SIGNUP_MODE } from '~/model/constants'
 
 export default function AuthForm() {
@@ -12,7 +12,7 @@ export default function AuthForm() {
   return (
     <form method="post" className="form" id="auth-form">
       <div className="icon-img">
-        <FaLock />
+        {mode === LOGIN_MODE ? <FaLock /> : <FaUserPlus />}
       </div>
       <p>
         <label htmlFor="email">Email Address</label>
