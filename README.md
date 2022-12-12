@@ -1,6 +1,8 @@
-# Welcome to Remix!
+# Expenses Demo app
 
-- [Remix Docs](https://remix.run/docs)
+- Built with [Remix](https://remix.run/docs)
+- Based on a [Udemy course](https://www.udemy.com/course/remix-course/).
+- Converted to TypeScript
 
 ## Development
 
