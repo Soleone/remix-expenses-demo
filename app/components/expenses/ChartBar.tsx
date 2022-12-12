@@ -1,4 +1,10 @@
-export default function ChartBar({ maxValue, value, label }) {
+interface Bar {
+  maxValue: number
+  value: number
+  label: string
+}
+
+export default function ChartBar({ maxValue, value, label }: Bar) {
   let barFillHeight = '0%'
 
   if (maxValue > 0) {
