@@ -1,6 +1,5 @@
 import type { Expense } from "~/model/types"
 import { Link } from "@remix-run/react"
-import { expenses } from "~/model/expenses"
 
 export default function ExpenseListItem({ id, title, amount }: Expense) {
   function deleteExpenseItemHandler() {
@@ -15,7 +14,7 @@ export default function ExpenseListItem({ id, title, amount }: Expense) {
       </div>
       <menu className="expense-actions">
         <button onClick={deleteExpenseItemHandler}>Delete</button>
-        <Link to={`/expenses/${id}`}>Edit</Link>
+        <Link to={id}>Edit</Link>
       </menu>
     </article >
   )
