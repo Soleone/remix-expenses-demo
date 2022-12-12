@@ -1,5 +1,7 @@
 import type { LinksFunction } from "@remix-run/node"
 import expensesStyles from "~/styles/expenses.css"
+import ExpensesList from "~/components/expenses/ExpensesList"
+import { expenses } from "~/model/expenses"
 import { Outlet } from "@remix-run/react"
 
 export const links: LinksFunction = () => {
@@ -10,8 +12,11 @@ export const links: LinksFunction = () => {
 
 export default function ExpensesLayout() {
   return (
-    <main>
+    <>
       <Outlet />
-    </main>
+      <main>
+        <ExpensesList expenses={expenses} />
+      </main>
+    </>
   )
 }

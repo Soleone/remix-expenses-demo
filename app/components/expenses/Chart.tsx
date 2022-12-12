@@ -1,6 +1,7 @@
+import type { Expense } from '~/model/types'
 import ChartBar from './ChartBar'
 
-export default function Chart({ expenses }) {
+export default function Chart({ expenses }: { expenses: Expense[] }) {
   const chartDataPoints = [
     { label: 'Jan', value: 0 },
     { label: 'Feb', value: 0 },

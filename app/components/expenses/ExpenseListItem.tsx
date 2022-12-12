@@ -1,4 +1,8 @@
-export default function ExpenseListItem({ title, amount }) {
+import type { Expense } from "~/model/types"
+
+type ExpenseFragment = Pick<Expense, "title" | "amount">
+
+export default function ExpenseListItem({ title, amount }: ExpenseFragment) {
   function deleteExpenseItemHandler() {
     // tbd
   }
