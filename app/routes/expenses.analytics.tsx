@@ -1,7 +1,7 @@
 import type { MetaFunction } from "@remix-run/node"
+import { expenses } from "~/model/expenses"
 import ExpenseStatistics from "~/components/expenses/ExpenseStatistics"
 import Chart from "~/components/expenses/Chart"
-import { expenses } from "~/model/expenses"
 
 export default function AnalyticsRoute() {
   return (

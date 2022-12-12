@@ -1,7 +1,7 @@
 import type { MetaFunction } from "@remix-run/node"
+import type { Plan } from "~/model/types"
 import { FaTrophy, FaHandshake } from 'react-icons/fa'
 import PricingPlan from '~/components/marketing/PricingPlan'
-import type { Plan } from "~/model/types"
 
 const PRICING_PLANS: Plan[] = [
   {
