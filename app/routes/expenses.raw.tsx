@@ -1,7 +1,6 @@
-export default function RawRoute() {
-  return (
-    <div>
+import type { Expense } from "~/model/types"
+import { expenses } from "~/model/expenses"
 
-    </div>
-  )
+export function loader(): Expense[] {
+  return expenses
 }
